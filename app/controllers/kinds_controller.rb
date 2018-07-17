@@ -5,6 +5,7 @@ class KindsController < ApplicationController
   # GET /kinds.json
   def index
     @kinds = Kind.all
+    @user_name = "Paulo Cesar"
   end
 
   # GET /kinds/1

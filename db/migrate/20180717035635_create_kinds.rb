@@ -1,7 +1,7 @@
 class CreateKinds < ActiveRecord::Migration
   def change
     create_table :kinds do |t|
-      t.String :description
+      t.string :description
 
       t.timestamps null: false
     end
