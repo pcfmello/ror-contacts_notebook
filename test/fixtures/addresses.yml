@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  stret: MyString
+  street: MyString
   city: MyString
   state: MyString
   contact_id: 
 
 two:
-  stret: MyString
+  street: MyString
   city: MyString
   state: MyString
   contact_id: 

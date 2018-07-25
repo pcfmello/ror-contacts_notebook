@@ -5,7 +5,7 @@
 <table>
   <thead>
     <tr>
-      <th>Stret</th>
+      <th>Street</th>
       <th>City</th>
       <th>State</th>
       <th>Contact</th>
@@ -16,10 +16,10 @@
   <tbody>
     <% @addresses.each do |address| %>
       <tr>
-        <td><%= address.stret %></td>
+        <td><%= address.street %></td>
         <td><%= address.city %></td>
         <td><%= address.state %></td>
-        <td><%= address.contact %></td>
+        <td><%= address.contact.name %></td>
         <td><%= link_to 'Show', address %></td>
         <td><%= link_to 'Edit', edit_address_path(address) %></td>
         <td><%= link_to 'Destroy', address, method: :delete, data: { confirm: 'Are you sure?' } %></td>

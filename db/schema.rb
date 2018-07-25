@@ -14,7 +14,7 @@
 ActiveRecord::Schema.define(version: 20180717040017) do
 
   create_table "addresses", force: :cascade do |t|
-    t.string   "stret"
+    t.string   "street"
     t.string   "city"
     t.string   "state"
     t.integer  "contact_id"
