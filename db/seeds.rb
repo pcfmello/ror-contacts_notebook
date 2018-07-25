@@ -25,33 +25,3 @@ Kind.create!([
     }
 ])
 puts "[Tipos de contatos (Kinds)][OK]"
-
-puts "[Contatos (Contacts)]..."
-Contact.create!([
-    {
-        name: "Paulo Cesar", 
-        email: "pcfmello@gmail.com", 
-        kind: Kind.all.sample, 
-        rmk: "Trabalha na Exact Sales"
-    },
-    {
-        name: "Claudia Rodrigues", 
-        email: "claudinha2112@gmail.com", 
-        kind: Kind.all.sample, 
-        rmk: "Pedagoga e Psicóloga"},
-    {
-        name: "Lucas Rodrigues", 
-        email: "lukas_dagoga@hotmail.com", 
-        kind: Kind.all.sample, 
-        rmk: "Estudante de Direito na UNISUL"
-    }
-])
-10.times do |i|
-    Contact.create(
-        name: Faker::Name.name, 
-        email: Faker::Internet.email, 
-        kind: Kind.all.sample, 
-        rmk: Faker::Lorem.paragraph([1..5].sample)
-    )
-end
-puts "[Contatos (Contacts)][OK]"
